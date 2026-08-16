@@ -1,0 +1,22 @@
+{
+  "name": "capability-analyzer",
+  "version": "0.1.0",
+  "description": "Static capability analyzer for JS/TS MCP servers (direct-call detector v1)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "start": "ts-node src/cli.ts",
+    "build": "tsc -p tsconfig.json",
+    "analyze": "ts-node src/cli.ts"
+  },
+  "keywords": ["mcp","analyzer","security","static-analysis"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "minimist": "^1.2.8"
+  }
+}
